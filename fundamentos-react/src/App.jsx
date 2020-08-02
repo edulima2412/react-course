@@ -9,17 +9,22 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
-import ParOuImpar from "./components/condicional/ParOuImpar"
-import UsuarioInfo from "./components/condicional/UsuarioInfo"
-import "./App.css"
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import "./App.css";
 
 export default (_) => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-      <Card titulo="#09 - Renderização" color="#b3b3cc">
-        
+    < Card titulo="#09 - Comunicação Indireta" color="#66998c">
+        <IndiretaPai />
+      </Card>
+      <Card titulo="#09 - Comunicação Direta" color="#b3b3cc">
+        <DiretaPai />
       </Card>
       <Card titulo="#08 - Renderização Condicional" color="#996666">
         <ParOuImpar numero={21} />
