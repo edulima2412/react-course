@@ -13,6 +13,9 @@ import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 import "./App.css";
 
 export default (_) => (
@@ -20,7 +23,16 @@ export default (_) => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-    < Card titulo="#09 - Comunicação Indireta" color="#66998c">
+      <Card titulo="#13 - Megasena" color="#00000c">
+        <Mega />
+      </Card>
+      <Card titulo="#12 - Contador" color="#00098c">
+        <Contador numeroInicial={0} />
+      </Card>
+      <Card titulo="#11 - Componente Controlado (Input)" color="#FF998c">
+        <Input />
+      </Card>
+      <Card titulo="#10 - Comunicação Indireta" color="#66998c">
         <IndiretaPai />
       </Card>
       <Card titulo="#09 - Comunicação Direta" color="#b3b3cc">
